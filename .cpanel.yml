@@ -1,4 +1,7 @@
 ---
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/buyengag/repositories/hris-onsource/
+deployments:
+  - destination: /home/buyengag/repositories/hris-onsource/
+    repo: git@github.com:RecoPLacion/hris-onsource.git
+    branch: main
+    commands:
+      - git pull origin main
